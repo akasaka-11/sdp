@@ -3,7 +3,7 @@ package builder;
 public class GameCharacterBuilder {
 
     private String name;
-    private String classType;
+    private GameCharacter.CharacterClass classType;
     private int level;
     private String weapon;
     private String armor;
@@ -16,7 +16,7 @@ public class GameCharacterBuilder {
         return this;
     }
 
-    public GameCharacterBuilder setClassType(String classType) {
+    public GameCharacterBuilder setClassType(GameCharacter.CharacterClass classType) {
         this.classType = classType;
         return this;
     }
@@ -71,7 +71,7 @@ public class GameCharacterBuilder {
             throw new IllegalStateException("Character name is required.");
         }
 
-        if (classType == null || classType.isBlank()) {
+        if (classType == null) {
             throw new IllegalStateException("Character class is required.");
         }
 

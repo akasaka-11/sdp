@@ -17,7 +17,7 @@ public class Main {
 
         GameCharacter customCharacter = new GameCharacterBuilder()
                 .setName("Shadow")
-                .setClassType("Assassin")
+                .setClassType(GameCharacter.CharacterClass.ASSASSIN)
                 .setLevel(15)
                 .setWeapon("Dual Daggers")
                 .setArmor("Shadow Armor")

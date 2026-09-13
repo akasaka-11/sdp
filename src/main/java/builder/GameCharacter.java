@@ -2,8 +2,15 @@ package builder;
 
 public class GameCharacter {
 
+    public enum CharacterClass {
+        WARRIOR,
+        MAGE,
+        ARCHER,
+        ASSASSIN
+    }
+
     private final String name;
-    private final String classType;
+    private final CharacterClass classType;
     private final int level;
     private final String weapon;
     private final String armor;
@@ -13,7 +20,7 @@ public class GameCharacter {
 
     public GameCharacter(
             String name,
-            String classType,
+            CharacterClass classType,
             int level,
             String weapon,
             String armor,
@@ -35,7 +42,7 @@ public class GameCharacter {
     public String toString() {
         return "GameCharacter{" +
                 "name='" + name + '\'' +
-                ", classType='" + classType + '\'' +
+                ", classType=" + classType +
                 ", level=" + level +
                 ", weapon='" + weapon + '\'' +
                 ", armor='" + armor + '\'' +

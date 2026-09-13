@@ -2,11 +2,13 @@ package builder;
 
 public class CharacterDirector {
 
+    private static final int STARTING_LEVEL = 10;
+
     public GameCharacter createWarrior(String name) {
         return new GameCharacterBuilder()
                 .setName(name)
-                .setClassType("Warrior")
-                .setLevel(10)
+                .setClassType(GameCharacter.CharacterClass.WARRIOR)
+                .setLevel(STARTING_LEVEL)
                 .setWeapon("Great Sword")
                 .setArmor("Heavy Armor")
                 .setHealth(150)
@@ -18,8 +20,8 @@ public class CharacterDirector {
     public GameCharacter createMage(String name) {
         return new GameCharacterBuilder()
                 .setName(name)
-                .setClassType("Mage")
-                .setLevel(10)
+                .setClassType(GameCharacter.CharacterClass.MAGE)
+                .setLevel(STARTING_LEVEL)
                 .setWeapon("Magic Staff")
                 .setArmor("Light Robe")
                 .setHealth(80)
@@ -31,8 +33,8 @@ public class CharacterDirector {
     public GameCharacter createArcher(String name) {
         return new GameCharacterBuilder()
                 .setName(name)
-                .setClassType("Archer")
-                .setLevel(10)
+                .setClassType(GameCharacter.CharacterClass.ARCHER)
+                .setLevel(STARTING_LEVEL)
                 .setWeapon("Long Bow")
                 .setArmor("Leather Armor")
                 .setHealth(100)
