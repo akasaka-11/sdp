@@ -9,14 +9,14 @@ public class GameCharacter {
         ASSASSIN
     }
 
-    private final String name;
-    private final CharacterClass classType;
-    private final int level;
-    private final String weapon;
-    private final String armor;
-    private final int health;
-    private final int mana;
-    private final String specialAbility;
+    private String name;
+    private CharacterClass classType;
+    private int level;
+    private String weapon;
+    private String armor;
+    private int health;
+    private int mana;
+    private String specialAbility;
 
     public GameCharacter(
             String name,
