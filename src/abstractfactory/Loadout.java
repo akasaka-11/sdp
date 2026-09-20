@@ -2,7 +2,6 @@ package abstractfactory;
 
 import factorymethod.GameCharacter;
 
-/** Client: works only through the abstract factory and abstract products. */
 public class Loadout {
     private final GameCharacter character;
     private final Weapon weapon;
